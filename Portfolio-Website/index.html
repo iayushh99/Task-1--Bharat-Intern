@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio  </title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/6a96a3adac.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Image/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontened Developer</p>
+                <h1>Hi, I'm <span>Ayush</span> <br>Kumar Gautam</h1>
+            </div>
+        </div>
+    </div>
+    <!-----------about----------->
+    <div id="about">
+        <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="ayushh.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello! I'm Ayush Kumar Gautam,  an ambitious and enthusiastic fresh graduate with a Bachelor's 
+                    degree in Computer Applications (BCA). My journey in the realm of technology has just begun,
+                     and I am eager to apply the knowledge and skills I've gained during my academic pursuits.
+
+                     During my studies, I actively engaged in coursework that encompassed a diverse range of subjects, 
+                     from database management to web development. I am adept at coding in languages such as Java and Python, 
+                     and I have hands-on experience with HTML, CSS, and JavaScript for creating dynamic and 
+                     responsive web applications.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontened</span><br>Developer</li>
+                            <li><span>Python</span><br>Developer</li>
+                            <li><span>Web Development</span><br>Developer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            
+                            <li><span>BCA</span><br>United University, Prayagraj</li>
+                            <li><span>Intermediate</span><br>Bal Bharti School and College, Prayagraj</li>
+                            <li><span>High School</span><br>St. Thomas School, Prayagraj</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            
+                            <li><span>Fresher</span><br>"BCA 2024 UU | Web Developer | Freelancer Seeking New</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <!-----------------services----------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p> Creative and visually captivating web designs that leave a lasting impression.
+                        Seamless user experiences crafted through intuitive navigation and responsive layouts.
+                     Cutting-edge technologies and modern design trends combined to deliver stunning and functional websites.</p>
+                     <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop"></i>
+                    <h2>Frontened Developer</h2>
+                    <p> Experienced frontend developer with a passion for crafting beautiful and user-friendly websites. 
+                        Proficient in HTML, CSS, and JavaScript, with expertise in responsive design and cross-browser compatibility.
+                         Dedicated to creating seamless user experiences through clean code and intuitive interfaces.</p>
+                     <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-apple-whole"></i>
+                    <h2>Python Developer</h2>
+                    <p> Experienced Python developer proficient in building robust and scalable applications. Skilled in designing and 
+                        implementing efficient algorithms. Passionate about delivering high-quality code and continuously improving
+                         software development processes.</p>
+                     <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+     <!-------------------------portfolio------------>
+
+     
+     <!---------------------contact------------------>
+     <div id="contact">
+        <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>ayushhgautam13@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-phone"></i>+919005047273</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/ayush-kumar-gautam-9506a8276/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Image/Resume.me.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © All right reserved. Ayush Kumar Gautam</p>
+        </div>
+     </div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+     <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+     </script>
+     <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzWJH7X1zGAQPN1MItkH1Pp4jMWHufjRofLuQrrxoX3QeeHI5SpweFrUAQn6btAXH0U/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                    msg.innerHTML = "Message sent sucessfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    
+</body>
+</html>
